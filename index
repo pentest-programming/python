@@ -4,6 +4,12 @@
   - float
   - array
   - dict
+  - True
+  - False
+  - None
+  
+- yield
+- if "str" in var:
   
 # Important Functions
   - id
@@ -12,6 +18,13 @@
   - str
   - int
   - enumerate
+  - split
+  - strip
+  - join
+  - map
+  - lambda
+  - startswith
+  - find  
   
   
 # Loops
