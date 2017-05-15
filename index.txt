@@ -51,9 +51,14 @@
   - logging
   - re
   
+# try - catch, exceptions
+
 # OOP
 
-# try - catch, exceptions
+# Databases
+  - MySQL
+  - PostgreSQL
+  - ElasticSearch
 
 # Pythonic 
   
