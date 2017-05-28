@@ -76,3 +76,5 @@ if __name__ == "__main__":
 	app.run()
 
 
+# curl -d '{ "key1":"value1" }' -H "Content-Type: application/json" http://127.0.0.1:7878/api
+# curl  http://127.0.0.1:7878/api?key1=value
