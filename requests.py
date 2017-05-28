@@ -33,3 +33,46 @@ print text
 
 #print r.url
 
+
+
+#!/usr/bin/env python
+
+# pip install web.py
+
+import os
+import web
+import json
+
+
+web.config.debug = True
+
+
+class Project(object):
+
+	def __init__(self):
+
+		self.__post_data = {}
+
+
+	def GET(self):
+		user_data = web.input()
+		result = user_data.key1
+		
+		return json.dumps(result)
+		
+
+        def POST(self):
+
+                data = json.loads(web.data())
+		result = data["key1"]
+
+		return json.dumps(result)
+
+
+if __name__ == "__main__":
+
+	urls = ('/api', 'Project')
+	app = web.application(urls, globals())
+	app.run()
+
+
